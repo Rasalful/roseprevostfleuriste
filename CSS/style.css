@@ -3,6 +3,8 @@
  src: url("../FONTS/Occupied.otf")
 }
 
+
+
 /* début barre de navigation*/
 ul {
   list-style: none;
@@ -20,7 +22,7 @@ margin-left: 50px;
 margin-right: 5px;
 margin-top: 89px;
 font-size: 10px;
-font-family: Occupied;
+font-family: occupied;
 }
 
 .liennav  {
@@ -35,19 +37,20 @@ font-family: Occupied;
 }
 
 nav {
-  background-image: url(../IMG/patternmosa7.jpg);
+  background-color: #89B9C1;
 }
 
 .decolien {
   text-decoration: none;
-  color: purple;
+  color: #3D5900;
   font-weight: bold;
+  font-size: 20px;
 }
 /* fin de la barre de navigation*/
 body {
   margin: 50px;
   padding: 0;
-  background-color: rgb(181, 134, 203);
+  background-image: url(../IMG/patternmosa7.jpg);
 }
 
 
@@ -76,7 +79,6 @@ h1 {
   font-family: Occupied;
   font-size: 36px;
   padding-left: 5px;
-
 }
 
 .phome {
@@ -102,15 +104,26 @@ h1 {
 #produits {
   height: 700px;
   width: 100%;
-  background-image: linear-gradient(to top,white,#838DC8);
+  background-image: linear-gradient(to top,#25bd15b3,#61FF3066);
   position: relative;
   font-family: Occupied;
+  position: relative;
   }
+
+.logoinproduits {
+  height: 200px;
+  width: 400px;
+  background-image: url(../IMG/logo1.png);
+  position: absolute;
+  background-size: 100%;
+}
 
 .produits {
   float: right;
-
+  color: #EF62A0;
+  text-shadow: 2px 2px 2px black;
 }
+
 .conteneurproduits {
   width: 100%;
   height: 100%;
@@ -130,13 +143,13 @@ h1 {
 
 h3 {
   display:inline;
+  color: #3D5900;
 }
 
 span {
   color:rgb(49, 15, 105);
   font-weight: bold;
   float: right;
-  background-color: rgb(136, 88, 26);
 }
 
 .vignette span {
@@ -149,9 +162,7 @@ span {
   height: 80%;
   background-size: 100%;
 }
-.vignette1:hover {
-  filter: brightness(0.4);
-}
+
 
 .vignette2 {
   background-image: url(../IMG/vignette2.jpg);
@@ -182,7 +193,7 @@ span {
   height: 550px;
   width: 100%;
   position: relative;
-  background-color: #838DC8;
+  background-color: #04060133;
   position: relative;
 }
 
@@ -190,7 +201,7 @@ span {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(../IMG/flower14.png);
+  background-image: url(../IMG/flower14test.png);
   background-size: 60%;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -204,6 +215,11 @@ span {
   top: 11%;
   background-color: rgba(255, 255, 255, 0);
   font-family: Occupied;
+}
+
+.store h2 {
+  color: #EF62A0;
+  text-shadow: 2px 2px 2px black;
 }
 
 .store p {
@@ -257,7 +273,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top,#838DC8,white);
+  background-image: url(../IMG/fleurfond.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .formulaire {
@@ -292,16 +311,57 @@ textarea {
 
 .bouton {
   float: right;
-
 }
+
+
+
 /*Fin de la partie mail*/
 /*Début de la partie Footer*/
 
 footer {
-  background-color: purple;
-
+  background-color: #89B9C1;
+  height: 40px;
+  position: relative;
 }
 
 footer p {
   margin: 0;
+  font-family: Occupied;
+  font-weight: bold;
+  font-size: 22px;
+  position: absolute;
+  top: 8px;
+  color: #3D5900;
+  padding-left: 10px;
+}
+
+.conteneurfooter {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  float: right;
+
+}
+
+.facebookfooter {
+  width: 40px;
+  height: 40px;
+  background-image: url(../IMG/facebook.png);
+  background-size: 100%;
+}
+
+.twitterfooter {
+  width: 40px;
+  height: 40px;
+  background-image: url(../IMG/twitter.png);
+  background-size: 100%;
+}
+
+.instagramfooter {
+  width: 40px;
+  height: 40px;
+  background-image: url(../IMG/instagram.png);
+  background-size: 100%;
 }
