@@ -3,7 +3,19 @@
  src: url("../FONTS/Occupied.otf")
 }
 
+@font-face {
+ font-family: "kanuda";
+ src: url("../FONTS/Kanuda.ttf")
+}
 
+@font-face {
+ font-family: "goodnight";
+ src: url("../FONTS/Good-night.ttf")
+}
+
+html {
+  height: 100%;
+}
 
 /* début barre de navigation*/
 ul {
@@ -11,8 +23,9 @@ ul {
   margin: 0;
   padding: 0;
   height: 100px;
-  width: 40%;
+  width: 50%;
   float: right;
+  padding-right: 15px;
 }
 
 
@@ -22,7 +35,7 @@ margin-left: 50px;
 margin-right: 5px;
 margin-top: 89px;
 font-size: 10px;
-font-family: occupied;
+font-family: goodnight;
 }
 
 .liennav  {
@@ -38,19 +51,23 @@ font-family: occupied;
 
 nav {
   background-color: #89B9C1;
+  width: 100%;
+  border: 1px black solid;
 }
 
 .decolien {
   text-decoration: none;
-  color: #3D5900;
-  font-weight: bold;
+  color: rgb(168, 61, 252);
   font-size: 20px;
+  font-weight: bold;
 }
 /* fin de la barre de navigation*/
 body {
   margin: 50px;
   padding: 0;
-  background-image: url(../IMG/patternmosa7.jpg);
+  background-image: url(../IMG/woodpattern2.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 
@@ -59,26 +76,31 @@ body {
   background-image: url(../IMG/flower3.jpg);
   background-attachment: fixed;
   width: 100%;
-  height: 500px;
+  height: 700px;
   position: relative;
   background-size: 100%;
   padding-bottom: 35px;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+
 }
 
 .underhome {
   width: 50%;
   position: absolute;
-  top: 200px;
+  top: 300px;
   background-color: rgba(79, 158, 162, 0.61);
   margin-left: 20px;
 }
 
 h1 {
-  color: rgb(61, 89, 0);
+  color: rgb(168, 61, 252);
   font-weight: bold;
-  font-family: Occupied;
+  font-family: goodnight;
   font-size: 36px;
-  padding-left: 5px;
+  padding-left: 15px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .phome {
@@ -96,6 +118,19 @@ h1 {
   height: 30px;
   margin: auto;
   display: block;
+  margin-bottom: 5px;
+  border: none;
+  color:rgb(219, 121, 168);
+  font-weight: bold;
+  background-color: #e0e0e0;
+  -webkit-box-shadow: 3px -1px 5px 3px rgba(0,0,0,0.24);
+  font-family: Occupied;
+  text-shadow: 1px 1px 1px black;
+}
+
+.lien:hover {
+  background-color: rgb(219, 121, 168);
+  color: #e0e0e0;
 }
 /* fin de la paritie home */
 
@@ -104,10 +139,10 @@ h1 {
 #produits {
   height: 700px;
   width: 100%;
-  background-image: linear-gradient(to top,#25bd15b3,#61FF3066);
+  background-image: linear-gradient(to top,#000,#fff);
   position: relative;
-  font-family: Occupied;
-  position: relative;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
   }
 
 .logoinproduits {
@@ -120,8 +155,9 @@ h1 {
 
 .produits {
   float: right;
-  color: #EF62A0;
-  text-shadow: 2px 2px 2px black;
+  color: rgb(168, 61, 252);
+  text-shadow: 1px 1px 1px black;
+  font-family: goodnight;
 }
 
 .conteneurproduits {
@@ -133,23 +169,25 @@ h1 {
 }
 
 .vignette {
-
   width: 250px;
   height: 300px;
   padding-top: 25px;
   padding-left: 23px;
   background-color: rgba(79, 158, 162, 0.61);
+  -webkit-box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.75);
 }
 
 h3 {
   display:inline;
   color: #3D5900;
+  font-family: Occupied;
 }
 
 span {
   color:rgb(49, 15, 105);
   font-weight: bold;
   float: right;
+  font-family: Occupied;
 }
 
 .vignette span {
@@ -160,7 +198,7 @@ span {
   background-image: url(../IMG/vignette1.jpg);
   width: 90%;
   height: 80%;
-  background-size: 100%;
+  background-size: 100%;&
 }
 
 
@@ -190,11 +228,14 @@ span {
 /* début de la partie store */
 
 #store {
-  height: 550px;
+  height: 700px;
   width: 100%;
   position: relative;
-  background-color: #04060133;
+  background-color: #6f97b1e6;
   position: relative;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
 }
 
 .imgstore {
@@ -214,12 +255,12 @@ span {
   left: 53%;
   top: 11%;
   background-color: rgba(255, 255, 255, 0);
-  font-family: Occupied;
 }
 
 .store h2 {
-  color: #EF62A0;
-  text-shadow: 2px 2px 2px black;
+  color: #A83DFC;
+  text-shadow: 1px 1px 1px black;
+  font-family: goodnight;
 }
 
 .store p {
@@ -227,6 +268,7 @@ span {
   text-align-last: right;
   font-size: 25px;
   font-weight: bold;
+  font-family: Occupied;&
   }
 
   .facebook {
@@ -277,6 +319,9 @@ span {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
 }
 
 .formulaire {
@@ -292,7 +337,7 @@ span {
 .formulairebackground {
   width: 100%;
   height: 100%;
-  background-image: url(../IMG/wood1.jpg);
+  background-color: #88B9BB;
   z-index: 0;
   position: absolute;
   opacity: 0.8;
@@ -307,10 +352,27 @@ span {
 textarea {
   width: 346px;
   height: 250px;
+  resize: none;
 }
+
 
 .bouton {
   float: right;
+  background: #000;
+  color:rgb(219, 121, 168);
+  background-color: #e0e0e0;
+  font-family: Occupied;
+  font-weight: bold;
+  border: none;
+  height: 25px;
+  margin-top: 10px;
+  -webkit-box-shadow: 3px -1px 5px 3px rgba(0,0,0,0.24);
+  text-shadow: 1px 1px 1px black;
+}
+
+.bouton:hover {
+  background-color: rgb(219, 121, 168);
+  color: #e0e0e0;
 }
 
 
@@ -321,7 +383,11 @@ textarea {
 footer {
   background-color: #89B9C1;
   height: 40px;
+  width: 100%;
   position: relative;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
 }
 
 footer p {
@@ -331,8 +397,9 @@ footer p {
   font-size: 22px;
   position: absolute;
   top: 8px;
-  color: #3D5900;
+  color: rgb(168, 61, 252);
   padding-left: 10px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .conteneurfooter {
